@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Blog - Furni Modern Car Rental</title>
+    </head>
+    <body>
+        <!-- Navbar - Same across all pages -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Furni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-50 justify-content-between ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.php">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.php">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-sec1 py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="display-4 fw-bold">The Furni Blog</h1>
+                        <p class="lead">Expert insights, driving tips, and the latest news from the world of luxury automobiles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Blog Posts -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold">Featured Articles</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <img src="./img/2015-ferrari-458-speciale-maranello-2014-paris-motor-show-car-yellow-ferrari-front-view-car-0d357a91a3975dec0403139569ab7d23.png" class="card-img-top" alt="Ferrari Feature">
+                            <div class="card-body p-4">
+                                <h3 class="card-title fw-bold mb-3">The Evolution of Ferrari Design: From Classic to Contemporary</h3>
+                                <div class="d-flex mb-3">
+                                    <span class="me-3"><i class="fa-regular fa-calendar me-1"></i> June 15, 2024</span>
+                                    <span><i class="fa-regular fa-user me-1"></i> By Michael Thompson</span>
+                                </div>
+                                <p class="card-text">Tracing the design language evolution of Ferrari from its iconic classics to the cutting-edge models of today. We explore how the brand has maintained its distinctive identity while embracing modern styling cues.</p>
+                                <a href="#" class="btn btn-dark rounded-pill px-4">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <img src="./img/2017-ferrari-488-spider-sports-car-international-motor-show-germany-blue-ferrari-488-spider-car-front-69d13e8a4cc380de2a1094458b799d97.png" class="card-img-top" alt="Convertible Feature">
+                            <div class="card-body p-4">
+                                <h4 class="card-title fw-bold mb-3">5 Reasons to Choose a Convertible for Your Next Road Trip</h4>
+                                <div class="d-flex mb-3">
+                                    <span class="me-3"><i class="fa-regular fa-calendar me-1"></i> June 10, 2024</span>
+                                    <span><i class="fa-regular fa-user me-1"></i> By Jessica Miller</span>
+                                </div>
+                                <p class="card-text">There's nothing quite like the feeling of wind in your hair and sun on your face as you drive along the coast...</p>
+                                <a href="#" class="btn btn-dark rounded-pill px-4">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories Section -->
+        <section class="py-5 bg-main">
+            <div class="container py-4">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                                    type="button" role="tab" aria-controls="pills-all" aria-selected="true">ALL</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-luxury-tab" data-bs-toggle="pill" data-bs-target="#pills-luxury"
+                                    type="button" role="tab" aria-controls="pills-luxury" aria-selected="false">Luxury Cars</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-tips-tab" data-bs-toggle="pill" data-bs-target="#pills-tips"
+                                    type="button" role="tab" aria-controls="pills-tips" aria-selected="false">Rental Tips</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-travel-tab" data-bs-toggle="pill" data-bs-target="#pills-travel"
+                                    type="button" role="tab" aria-controls="pills-travel" aria-selected="false">Travel Guides</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- All Posts Tab -->
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/2015-ferrari-458-speciale-maranello-2014-paris-motor-show-car-yellow-ferrari-front-view-car-0d357a91a3975dec0403139569ab7d23.png" alt="Luxury car maintenance">
+                                <h5 class="my-3">Essential Maintenance Tips for Luxury Vehicles</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">David Miller</a></span> <span>on <a class="text-decoration-none text-black" href="#">May 15, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/sports-car-ferrari-458-red-ferrari-458-italia-sports-car-277b6eac2f5011d37c6d490f434a4eff.png" alt="Road trip planning">
+                                <h5 class="my-3">Planning the Perfect Luxury Road Trip</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Sarah Johnson</a></span> <span>on <a class="text-decoration-none text-black" href="#">May 10, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/thhgevkj1ll0b0nhatvap14tar-d8f4c6474358b52051d0198484bde467.png" alt="First-time renters guide">
+                                <h5 class="my-3">First-Time Luxury Car Renter's Guide</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">James Wilson</a></span> <span>on <a class="text-decoration-none text-black" href="#">May 5, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/2017-ferrari-488-spider-sports-car-international-motor-show-germany-blue-ferrari-488-spider-car-front-69d13e8a4cc380de2a1094458b799d97.png" alt="Coastal driving">
+                                <h5 class="my-3">Top 10 Coastal Drives for Your Next Vacation</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Emma Roberts</a></span> <span>on <a class="text-decoration-none text-black" href="#">April 28, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/sports-car-ferrari-458-red-ferrari-458-italia-sports-car-277b6eac2f5011d37c6d490f434a4eff.png" alt="Ferrari history">
+                                <h5 class="my-3">The Fascinating History of Ferrari</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Michael Thompson</a></span> <span>on <a class="text-decoration-none text-black" href="#">April 20, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/2015-ferrari-458-speciale-maranello-2014-paris-motor-show-car-yellow-ferrari-front-view-car-0d357a91a3975dec0403139569ab7d23.png" alt="Car photoshoot tips">
+                                <h5 class="my-3">How to Take Perfect Photos of Your Luxury Rental</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Jessica Miller</a></span> <span>on <a class="text-decoration-none text-black" href="#">April 15, 2024</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Luxury Cars Tab -->
+                    <div class="tab-pane fade" id="pills-luxury" role="tabpanel" aria-labelledby="pills-luxury-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/sports-car-ferrari-458-red-ferrari-458-italia-sports-car-277b6eac2f5011d37c6d490f434a4eff.png" alt="Ferrari history">
+                                <h5 class="my-3">The Fascinating History of Ferrari</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Michael Thompson</a></span> <span>on <a class="text-decoration-none text-black" href="#">April 20, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/2015-ferrari-458-speciale-maranello-2014-paris-motor-show-car-yellow-ferrari-front-view-car-0d357a91a3975dec0403139569ab7d23.png" alt="Luxury car maintenance">
+                                <h5 class="my-3">Essential Maintenance Tips for Luxury Vehicles</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">David Miller</a></span> <span>on <a class="text-decoration-none text-black" href="#">May 15, 2024</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rental Tips Tab -->
+                    <div class="tab-pane fade" id="pills-tips" role="tabpanel" aria-labelledby="pills-tips-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/thhgevkj1ll0b0nhatvap14tar-d8f4c6474358b52051d0198484bde467.png" alt="First-time renters guide">
+                                <h5 class="my-3">First-Time Luxury Car Renter's Guide</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">James Wilson</a></span> <span>on <a class="text-decoration-none text-black" href="#">May 5, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/2015-ferrari-458-speciale-maranello-2014-paris-motor-show-car-yellow-ferrari-front-view-car-0d357a91a3975dec0403139569ab7d23.png" alt="Car photoshoot tips">
+                                <h5 class="my-3">How to Take Perfect Photos of Your Luxury Rental</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Jessica Miller</a></span> <span>on <a class="text-decoration-none text-black" href="#">April 15, 2024</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Travel Guides Tab -->
+                    <div class="tab-pane fade" id="pills-travel" role="tabpanel" aria-labelledby="pills-travel-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/sports-car-ferrari-458-red-ferrari-458-italia-sports-car-277b6eac2f5011d37c6d490f434a4eff.png" alt="Road trip planning">
+                                <h5 class="my-3">Planning the Perfect Luxury Road Trip</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Sarah Johnson</a></span> <span>on <a class="text-decoration-none text-black" href="#">May 10, 2024</a></span>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img class="w-100 rounded-4" src="./img/2017-ferrari-488-spider-sports-car-international-motor-show-germany-blue-ferrari-488-spider-car-front-69d13e8a4cc380de2a1094458b799d97.png" alt="Coastal driving">
+                                <h5 class="my-3">Top 10 Coastal Drives for Your Next Vacation</h5>
+                                <span>by <a class="text-decoration-none fw-bold text-black" href="#">Emma Roberts</a></span> <span>on <a class="text-decoration-none text-black" href="#">April 28, 2024</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="d-flex">
+                            <i class="fa-solid pe-2 fa-envelope fa-2xl mt-3"></i>
+                            <h3>Subscribe to Our Newsletter</h3>
+                        </div>
+                        <p>Stay updated with our latest blog posts, special offers, and luxury car news.</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control p-3" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" class="form-control p-3" placeholder="Email address" aria-label="Email">
+                            </div>
+                            <div class="col-md-2">
+                                <button class="border-0 p-4 rounded-2 mt-1 bg-button-lastsec"><i class="fa-solid fa-paper-plane fa-lg" style="color: #fcfcfc;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 chair">
+                        <img class="w-100" src="./img/thhgevkj1ll0b0nhatvap14tar-d8f4c6474358b52051d0198484bde467.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="h-50 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="col-12 text-main">
+                            <h2><a class="text-decoration-none h1" href="">Furni</a></h2>
+                        </div>
+                        <div class="col-12">
+                            <p>At Furni, we offer premium car rental services with a fleet of luxury and sports vehicles. Experience unmatched quality, reliability, and customer service for your journey.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="row ">
+                                <div class="col-6">
+                                    <div class="d-flex justify-content-around">
+                                        <div class=" h-logo d-flex justify-content-center rounded-circle ">
+                                            <a href=""><i class="rounded-circle fa-brands fa-facebook-f"></i></a>
+                                        </div>
+                                        <div class=" h-logo d-flex justify-content-center rounded-circle">
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class=" h-logo d-flex justify-content-center rounded-circle ">
+                                            <a class="insta-color" href=""><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                        <div class=" h-logo d-flex justify-content-center rounded-circle ">
+                                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 ps-5">
+                        <div class="row">
+                            <div class="col-3 mt-4">
+                                <ul class="list-unstyled">
+                                    <li><a class="text-black text-decoration-none" href="about.html">About us</a></li>
+                                    <li class="my-3"><a class="text-black text-decoration-none" href="services.html">Services</a></li>
+                                    <li><a class="text-black text-decoration-none" href="blog.html">Blog</a></li>
+                                    <li class="my-3"><a class="text-black text-decoration-none" href="contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3 mt-4">
+                                <ul class="list-unstyled">
+                                    <li><a class="text-black text-decoration-none" href="#">Support</a></li>
+                                    <li class="my-3"><a class="text-black text-decoration-none" href="#">Knowledge base</a></li>
+                                    <li><a class="text-black text-decoration-none" href="#">Live chat</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3 mt-4">
+                                <ul class="list-unstyled">
+                                    <li><a class="text-black text-decoration-none" href="#">Jobs</a></li>
+                                    <li class="my-3"><a class="text-black text-decoration-none" href="#">Our team</a></li>
+                                    <li><a class="text-black text-decoration-none" href="#">Leadership</a></li>
+                                    <li class="my-3"><a class="text-black text-decoration-none" href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3 mt-4">
+                                <ul class="list-unstyled">
+                                    <li><a class="text-black text-decoration-none" href="#">Ferrari 488 GTB</a></li>
+                                    <li class="my-3"><a class="text-black text-decoration-none" href="#">Ferrari Portofino</a></li>
+                                    <li><a class="text-black text-decoration-none" href="#">Ferrari F8 Tributo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="w-100 line bg-black my-5"></div>
+                </div>
+            </div>
+        </div>
+        <section class="h-25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Copyright ©2024. All Rights Reserved. — Designed with love by Untree.co Distributed By ThemeWagon</p>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-5">
+                                <h6><a class="text-decoration-none text-black" href="">Terms & Conditions</a></h6>
+                            </div>
+                            <div class="col-5">
+                                <h6><a class="text-decoration-none text-black" href="">Privacy Policy</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/915c149c65.js" crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html> 

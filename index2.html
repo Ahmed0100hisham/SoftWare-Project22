@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Car Rental System</h1>
+        <div class="mb-3">
+            <label for="customerName" class="form-label">Customer name</label>
+            <input type="text" class="form-control" id="customerName">
+        </div>
+        <div class="mb-3">
+            <label for="carCategory" class="form-label">Car Model</label>
+            <select class="form-control" id="carCategory" onchange="updatePrice()">
+                <option value="">Select a car</option>
+                <option value="Ferrari 488 GTB">Ferrari 488 GTB - $150/day</option>
+                <option value="Ferrari Portofino">Ferrari Portofino - $178/day</option>
+                <option value="Ferrari F8 Tributo">Ferrari F8 Tributo - $243/day</option>
+                <option value="Mercedes S-Class">Mercedes S-Class - $120/day</option>
+                <option value="Ferrari Roma">Ferrari Roma - $195/day</option>
+                <option value="Ferrari 812 Superfast">Ferrari 812 Superfast - $280/day</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="carPrice" class="form-label">Daily Price</label>
+            <input type="number" class="form-control" id="carPrice" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="rentalDays" class="form-label">Rental Days</label>
+            <input type="number" class="form-control" id="rentalDays">
+        </div>
+        <button id="saveBtn" onclick="addRental()" class="btn btn-primary">Save Rental</button>
+        <button id="updateBtn" onclick="finishUpdate()" class="btn btn-warning d-none">Update Rental</button>
+
+        <div class="mt-5">
+            <input oninput="searchRental(this.value)" type="text" placeholder="Search rentals by customer name" class="form-control w-50 mx-auto my-4">
+            
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Car Model</th>
+                        <th>Daily Price</th>
+                        <th>Rental Days</th>
+                        <th>Total Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+            </table>
+            <button onclick="clearAllData()" class="btn btn-danger">Delete all rentals</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
